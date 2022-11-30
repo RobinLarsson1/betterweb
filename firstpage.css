@@ -1,0 +1,124 @@
+* {
+	font-family: var(--font);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--white);
+}
+html {
+	min-width: 360px;
+}
+h1 {
+	font-family: var(--logga);
+	color: var(--white);
+	font-size: 36px;
+}
+span {
+	font-family: 'Lobster', cursive;
+	color: var(--green);
+	font-size: 32px;
+}
+header {
+	background: linear-gradient(rgba(8, 16, 32, 0.8), rgba(8, 16, 32, 0.8)), url(/Bilder/kod2.jfif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: bottom left;
+	height: 8em;
+}
+.head {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 8em;
+}
+ul li {
+	list-style-type: none;
+	font-weight: bold;
+	margin: 0.6em;
+}
+a {
+	color: var(--white);
+	text-decoration: none;
+	
+}
+.header__button {
+	background-color: var(--green);
+	padding: var(--padding);
+	text-align: center;
+}
+.hero__img {
+	display: flex;
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/Bilder/iStock-1163542789.jpg);
+	min-width: 100%;
+	height: 25em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+}
+h3{
+	color: var(--white);
+	font-family: var(--text);
+	font-size: 24px;
+}
+.better {
+	color: var(--white);
+	font-size: 32px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 20em;
+	height: 22em;
+	background-color: #ffffff;
+	margin: 4em 3em 1em 3em;
+	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.30); 
+}
+.container__card > h4 {
+	text-align: center;
+	background-color: var(--green);
+	padding: 2.75em 2em;
+	font-size: 24px;
+	color: var(--white);
+}
+button {
+	align-items: center;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: var(--darkblue);
+	border: none;
+	margin: 0 6.5em;
+	padding: 0.5em;
+	color: var(--white);
+}
+.container__card > p {
+	font-weight: bold;
+	margin: 1em 1em 1em 1.5em;
+}
+.loggor{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2em 1em;
+}
+.loggor > img {
+	height: 3em;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--darkblue);
+	height: 12em;
+	font-size: 80%;
+}
+
