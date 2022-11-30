@@ -108,11 +108,12 @@ button {
 .loggor{
 	display: flex;
 	justify-content: space-evenly;
-	margin: 2em 1em;
+	margin: 3em 1em;
 }
 .loggor > img {
 	height: 3em;
 }
+
 footer {
 	display: flex;
 	justify-content: center;
@@ -120,5 +121,41 @@ footer {
 	background-color: var(--darkblue);
 	height: 12em;
 	font-size: 80%;
+}
+@media (min-width: 500px) {
+	.container__card {
+		width: 25em;
+	    height: 28em;
+	}
+	.container__card > h4 {
+		padding: 3.5em 3em;
+	}
+	button {
+		margin: 0 8em;
+		height: 3em;
+	}
+}
+@media (min-width: 750px) {
+	.head {
+		justify-content: space-around;
+	}
+	.hero__img {
+		height: 35em;
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.container__card {
+		width: 25em;
+		flex-shrink: 0;
+	}
+	.loggor {
+		margin: 7em 5em ;
+	}
+	.loggor > img {
+		height: 4em;
+	}
 }
 
