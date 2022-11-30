@@ -157,5 +157,23 @@ footer {
 	.loggor > img {
 		height: 4em;
 	}
+	.navbar {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	h3 {
+		font-size: 36px;
+	}
+	.better {
+		font-size: 40px;
+	}
+	span {
+		font-size: 40px;
+	}
+	ul {
+		display: flex;
+		align-items: center;
+	}
 }
 
