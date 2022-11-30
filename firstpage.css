@@ -32,8 +32,19 @@ ul li {
 a {
 	color: var(--white);
 	text-decoration: none;
+	transition: 0.7s;
+}
+li:last-child:hover {
 	
 }
+a:hover {
+	color: var(--green);
+	font-size: 140%;
+}
+ul:last-child:hover {
+	color: var(--darkblue);
+}
+
 .header__button {
 	background-color: var(--green);
 	padding: var(--padding);
@@ -177,6 +188,12 @@ footer {
 	ul {
 		display: flex;
 		align-items: center;
+	}
+	ul li {
+		margin: 1.5em;
+	}
+	.loggor > *:hover {
+		font-size: 130%;
 	}
 }
 
