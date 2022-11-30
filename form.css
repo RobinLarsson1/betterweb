@@ -1,0 +1,51 @@
+/* start på header */
+header {
+	background: linear-gradient(rgba(8, 16, 32, 0.8), rgba(8, 16, 32, 0.8)), url(/Bilder/kod2.jfif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: bottom left;
+	height: 8em;
+}
+.head {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 8em;
+}
+ul li {
+	list-style-type: none;
+	font-weight: bold;
+	margin: 0.6em;
+}
+a {
+	color: var(--white);
+	text-decoration: none;
+	transition: 0.7s;
+}
+li:last-child:hover {
+	
+}
+a:hover {
+	color: var(--green);
+	font-size: 140%;
+}
+ul:last-child:hover {
+	color: var(--darkblue);
+}
+
+.header__button {
+	background-color: var(--green);
+	padding: var(--padding);
+	text-align: center;
+}
+h1 {
+	font-family: var(--logga);
+	color: var(--white);
+	font-size: 36px;
+}
+span {
+	font-family: 'Lobster', cursive;
+	color: var(--green);
+	font-size: 32px;
+}
+/* slut på header */
