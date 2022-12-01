@@ -63,11 +63,11 @@ span {
 }
 /* slut på header */
 
-footer {
+/* footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--darkblue);
 	height: 12em;
 	font-size: 80%;
-}
+} */
