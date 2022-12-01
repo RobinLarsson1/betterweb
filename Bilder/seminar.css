@@ -1,3 +1,16 @@
+* {
+	font-family: var(--font);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--white);
+}
+html {
+	min-width: 360px;
+}
+
 /* start på header */
 header {
 	background: linear-gradient(rgba(8, 16, 32, 0.8), rgba(8, 16, 32, 0.8)), url(/Bilder/kod2.jfif);
