@@ -29,6 +29,45 @@
 			</div>
 		</div>
 	</header>
-	
+	<div class="sheet">
+	<form class="reg">
+		<h3 class="formh3">Registrering </h3> 
+		<!-- <h4 class="dekoration">&#60;&#47;&#62;</h4> -->
+
+		<input type="text" placeholder="För och efternamn" onfocus="this.placeholder=''" 
+		onblur="this.placeholder='För och efternamn'" required>
+
+		<input type="text" placeholder="E-postadress" onfocus="this.placeholder=''" 
+		onblur="this.placeholder='E-postadress'" required>
+
+		<input type="text" placeholder="Adress" onfocus="this.placeholder=''" 
+        onblur="this.placeholder='Adress'" required> <br>
+
+		<label for="radio">Vilka dagar? </label> <br>
+
+		<input type="radio" name="dagar" value="9/12" id="radio" />9/12</label> <br>
+
+		<input type="radio" name="dagar" value="9/12" id="radio" />10/12</label> <br>
+
+		<input type="radio" name="dagar" value="11/12" id="radio" />11/12</label><br>
+
+		<input type="radio" name="dagar" value="alla" id="radio" />Alla</label> <br>
+
+        <select name="mat" id="mat">
+		<option value="" disabled selected>Mat?</option>
+        <option value="kött">Kött</option>
+        <option value="Fisk">Fisk</option>
+        <option value="Vegetariskt">Vegetariskt</option>
+        </select>
+		<textarea placeholder="Allergier?" name="Allergier" id="Allergier" cols="30" rows="8"  onfocus="this.placeholder=''" 
+		onblur="this.placeholder='Allergier?'"></textarea> <br>
+		<button type="submit"> Registrera </button> <br>
+		<img src="Bilder/bygga.png" alt="bakgrundsbild på kod" class="bakgrund">
+
+	</form>
+    </div>
+	<footer>
+		<h3><span class="better">Bättre.</span> <span>Webb</span></h3</h3>
+	</footer>
 </body>
 </html>
