@@ -63,7 +63,7 @@ span {
 }
 /* slut på header */
 .bygga {
-	height: 15em;
+	height: 13em;
 }
 .container {
 	display: flex;
@@ -123,4 +123,19 @@ footer {
 	background-color: var(--darkblue);
 	height: 12em;
 	font-size: 80%;
+}
+@media (min-width: 500px) {
+	.bygga {
+		height: 16em;
+		overflow: hidden;
+	}
+}
+@media (min-width: 750px) {
+	.head {
+		justify-content: space-around;
+	}
+	.navbar {
+		display: flex;
+		flex-direction: row;
+	}
 }
