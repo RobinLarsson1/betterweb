@@ -34,9 +34,7 @@ a {
 	color: var(--white);
 	text-decoration: none;
 }
-li:last-child:hover {
-	
-}
+
 .header__button {
 	background-color: var(--green);
 	padding: var(--padding);
@@ -126,6 +124,10 @@ h3 {
 }
 .info {
 	margin-bottom: 1em;
+}
+.sunday {
+	background-color: var(--green);
+	text-decoration: underline;
 }
 
 footer {
