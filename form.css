@@ -35,17 +35,6 @@ a {
 	text-decoration: none;
 	transition: 0.7s;
 }
-li:last-child:hover {
-	
-}
-a:hover {
-	color: var(--green);
-	font-size: 140%;
-}
-ul:last-child:hover {
-	color: var(--darkblue);
-}
-
 .header__button {
 	background-color: var(--green);
 	padding: var(--padding);
@@ -66,9 +55,6 @@ span {
 }
 /* slut på header */
 .reg {
-	/* display: flex;
-	flex-direction: column;
-	text-align: start; */
 	margin: 1em;
 	display: block;
 	
@@ -78,6 +64,12 @@ input {
 	padding: 5px;
 	margin: 1em;
 }
+/* input:valid {
+	border-right:0.5em solid #008000;
+}
+input:invalid {
+	border-right:0.5em solid #ff0000;
+} */
 select {
 	padding: 5px;
 	width: 70%;
