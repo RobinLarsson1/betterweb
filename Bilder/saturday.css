@@ -1,0 +1,182 @@
+* {
+	font-family: var(--font);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--white);
+}
+html {
+	min-width: 360px;
+}
+
+/* start på header */
+header {
+	background: linear-gradient(rgba(8, 16, 32, 0.8), rgba(8, 16, 32, 0.8)), url(/Bilder/kod2.jfif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: bottom left;
+	height: 8em;
+}
+.head {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 8em;
+}
+ul li {
+	list-style-type: none;
+	font-weight: bold;
+	margin: 0.6em;
+}
+a {
+	color: var(--white);
+	text-decoration: none;
+}
+.header__button {
+	background-color: var(--green);
+	padding: var(--padding);
+	text-align: center;
+}
+.better {
+	color: var(--white);
+}
+h1 {
+	font-family: var(--logga);
+	color: var(--white);
+	font-size: 36px;
+}
+span {
+	font-family: 'Lobster', cursive;
+	color: var(--green);
+	font-size: 32px;
+}
+/* slut på header */
+.bygga {
+	height: 13em;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3em;
+}
+h2 {
+	color: var(--green);
+	font-weight: bold;
+	background-color: var(--darkblue);
+	text-align: center;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+}
+.talare__img {
+	height: 6em;
+	border-radius: 50%;
+	margin: 1em;
+}
+.container__card {
+	background-color: #F3F3F3;
+	max-width: 35em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em 1em 3em 1em;
+	height: 15em;
+	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.30); 
+}
+.text {	
+	margin-right: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 15em;
+}
+.text > h4 {
+	color: var(--darkblue);
+	font-size: 28px;
+	text-align: end;
+	font-family: var(--logga);
+	opacity: 40%;
+}
+h3 {
+	color: var(--green);
+	font-size: 22px;
+	margin-top: .5em;
+	font-weight: bold;
+	
+}
+.dagar {
+	display: flex;
+	flex-direction: column;
+	margin: 1px;
+}
+.tid {
+	font-weight: bold;
+	color: var(--darkblue);
+	margin-top: 2em;
+}
+.saturday {
+	background-color: var(--green);
+	color: var(--darkblue);
+	text-decoration: underline;
+}
+.info {
+	margin-bottom: 1em;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--darkblue);
+	height: 12em;
+	font-size: 80%;
+}
+@media (min-width: 500px) {
+	.bygga {
+		height: 18em;
+		overflow: hidden;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+}
+@media (min-width: 750px) {
+	.head {
+		justify-content: space-around;
+	}
+	ul {
+		display: flex;
+		align-items: center;
+	}
+	ul li {
+		margin: 1.5em;
+	}
+	.better {
+		font-size: 40px;
+	}
+	span {
+		font-size: 40px;
+	}
+	.talare__img {
+		height: 8em;
+	}
+	.tid {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	.container__card {
+		min-width: 40em;
+	}
+	.text > h4 {
+		font-size: 36px;
+		
+	}
+	.dagar {
+		flex-direction: row;
+		margin-bottom: 1em;
+	}
+	
+}
