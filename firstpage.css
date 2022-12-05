@@ -34,17 +34,6 @@ a {
 	text-decoration: none;
 	transition: 0.7s;
 }
-li:last-child:hover {
-	
-}
-a:hover {
-	color: var(--green);
-	font-size: 140%;
-}
-ul:last-child:hover {
-	color: var(--darkblue);
-}
-
 .header__button {
 	background-color: var(--green);
 	padding: var(--padding);
@@ -95,24 +84,35 @@ h3{
 	height: 22em;
 	background-color: #ffffff;
 	margin: 4em 3em 1em 3em;
-	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.30); 
+	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.10); 
 }
 .container__card > h4 {
 	text-align: center;
-	background-color: var(--green);
 	padding: 2.75em 2em;
 	font-size: 24px;
-	color: var(--white);
+	color: var(--green);
+}
+.friday {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)),url("/Bilder/kanske.jpg");
+	background-size: cover;
+}
+.saturday {
+	background-image: url("/Bilder/lördag.jpg");
+	background-size: cover;
+}
+.sunday {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)), url("/bilder/söndag.jpg");
+	background-size: cover;
 }
 button {
 	align-items: center;
 	font-size: 1em;
 	font-weight: bold;
-	background-color: var(--darkblue);
+	background-color: var(--green);
 	border: none;
 	margin: 0 6.5em;
 	padding: 0.5em;
-	color: var(--white);
+	color: var(--darkblue);
 }
 .container__card > p {
 	font-weight: bold;
@@ -128,12 +128,47 @@ button {
 }
 
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: var(--darkblue);
 	height: 12em;
 	font-size: 80%;
+	
+}
+footer .better {
+	font-size: 28px;
+}
+footer span {
+	font-size: 28px;
+}
+.footer__top, .footer__mid {
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	padding-top: 2em;
+}
+.footer__copy {
+	margin-left: .5em;
+	flex-wrap: wrap;
+}
+.footer__top p {
+	font-size: 12px;
+	font-weight: 100;
+	color: var(--white);
+	margin-bottom: 5px;
+}
+.footer__mid span, .footer__bottom span {
+	font-family: var(--text);
+	font-size: 12px;
+}
+.footer__mid p {
+	color: var(--white);
+}
+.footer__bottom {
+	display: flex;
+	justify-content: center;
+	color: var(--white);	
+}
+.footer__bottom i {
+	font-size: 2em;
 }
 @media (min-width: 500px) {
 	.container__card {
@@ -186,9 +221,6 @@ footer {
 	}
 	ul li {
 		margin: 1.5em;
-	}
-	.loggor > *:hover {
-		font-size: 130%;
 	}
 }
 
