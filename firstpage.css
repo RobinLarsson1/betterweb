@@ -60,6 +60,7 @@ span {
 	background-size: cover;
 	align-items: center;
 	justify-content: center;
+	object-position: 100% 10%;
 }
 h3{
 	color: var(--white);
