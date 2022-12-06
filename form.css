@@ -35,10 +35,40 @@ a {
 	text-decoration: none;
 	transition: 0.7s;
 }
-.header__button {
+.header__btn {
 	background-color: var(--green);
-	padding: var(--padding);
+	color: var(--white);
+	padding: .5em 1em;
 	text-align: center;
+	position: relative;
+	outline: none;
+	border: none;
+	z-index: 1;
+	transition: color 300ms ease-in-out;
+	font-weight: bold;
+	font-size: 1em;
+}
+.header__btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--white);
+	z-index: -1;
+
+	transition: transform 300ms ease-in-out;
+	transform: scaleX(0);
+	transform-origin: left;
+}
+.header__btn:hover::before,
+.header__btn:focus::before {
+	transform: scaleX(1);
+}
+.header__btn:hover,
+.header:focus {
+	color: var(--darkblue);
 }
 h1 {
 	font-family: var(--logga);
@@ -117,19 +147,42 @@ label {
 footer {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	text-align: center;
 	background-color: var(--darkblue);
-	height: 12em;
+	height: 15em;
 	font-size: 80%;
 	margin-top: auto;
+}
+footer .better {
+	font-size: 28px;
+}
+footer span {
+	font-size: 28px;
+}
+.footer__mid span, .footer__bottom span {
+	font-family: var(--text);
+	font-size: 12px;
+}
+footer p {
+	color: var(--white);
+	margin-top: 1em;
+}
+.footer__bottom i {
+	font-size: 2em;
+}
+.footer__bottom p {
+	margin-top: 2em;
 } 
-
 @media (min-width: 500px ) {
     .bakgrund {
 		height: 15em;
 	}
 }
 @media (min-width: 650px ) {
+	.head {
+		justify-content: space-around;
+	}
 	.navbar {
 		display: flex;
 		flex-direction: row;

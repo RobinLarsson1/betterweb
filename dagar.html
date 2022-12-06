@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -18,13 +19,13 @@
 	<header>
 		<div class="head">
 			<div class="betterweb">
-				<h1>Bättre.<span>Webb</span></h1>
+				<a href="firstpage.html"><h1>Bättre.<span>Webb</span></h1></a>
 			</div>
 			<div>
 				<ul >
-					<li><a href="#">Hem</a></li>
-					<li><a href="#">Seminarier</a></li>
-					<li class="header__button"><a href="#">Anmälan</a></li>
+					<li><a href="firstpage.html">Hem</a></li>
+					<li><a href="dagar.html">Seminarier</a></li>
+					<a href="/form.html"> <button class="header__btn">Anmälan</button> </a>
 				</ul>
 			</div>
 		</div>
@@ -36,7 +37,7 @@
 			<div class="card__text">
 				<div></div>
 			<h3>Fredag 9/12</h3>
-			<button>Se schema</button>
+			<button class="card__text__btn"> <a href="friday.html">Se schema</a></button>
 		</div>
 		</div>
 		<div class="container__cards">
@@ -44,7 +45,7 @@
 			<div class="card__text">
 				<div></div>
 			<h3>Lördag 10/12</h3>
-			<button>Se schema</button>
+			<button class="card__text__btn"> <a href="saturday.html">Se schema</a></button>
 		</div>
 		</div>
 		<div class="container__cards">
@@ -52,12 +53,23 @@
 			<div class="card__text">
 				<div></div>
 			<h3>Söndag 11/12</h3>
-			<button>Se schema</button>
+			<button class="card__text__btn"> <a href="sunday.html">Se schema</a></button>
+			
 		</div>
 		</div>
 	</div>
-<footer>
-		<h3><span class="better">Bättre.</span><span>Webb</span></h3</h3>
+	<footer>
+		<div class="footer__top">
+		<h3><span class="better">Bättre.</span><span>Webb</span></h3>
+		<p class="footer__copy">Bättre.Webb&#169;, All rights reserved</p>
+	</div>
+	<div class="footer__mid">
+		<p></p>
+		<p> <span> Email:</span>support@battrewebb.se</p>
+	</div>
+	<div class="footer__bottom">
+		<p> <span> Made by:</span> Robin Larsson. Find me here! <i class="ri-linkedin-box-fill"></i> <i class="ri-instagram-line"></i></p>
+	</div>
 	</footer>
 </body>
 </html>
