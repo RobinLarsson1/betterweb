@@ -162,15 +162,24 @@ h3 {
 	background-color: var(--green);
 	text-decoration: underline;
 }
+.friday a:hover {
+	color: var(--darkblue);
+}
 .saturday {
 	background-color: var(--green);
 	color: var(--darkblue);
 	text-decoration: underline;
 }
+.saturday a:hover {
+	color: var(--darkblue);
+}
 .sunday {
 	background-color: var(--green);
 	color: var(--darkblue);
 	text-decoration: underline;
+}
+.sunday a:hover {
+	color: var(--darkblue);
 }
 .info {
 	margin-bottom: 1em;
