@@ -8,7 +8,7 @@ body {
 	background-color: var(--white);
 }
 html {
-	min-width: 360px;
+	min-width: 300px;
 	height: 100%;
 }
 /* start på header */
@@ -60,7 +60,6 @@ a:hover {
 	bottom: 0;
 	background-color: var(--white);
 	z-index: -1;
-
 	transition: transform 300ms ease-in-out;
 	transform: scaleX(0);
 	transform-origin: left;
@@ -115,12 +114,16 @@ h3{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 20em;
-	height: 22em;
+	width: 18em;
+	height: 20em;
 	background-color: #ffffff;
 	margin: 4em 3em 1em 3em;
 	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.10); 
 	align-items: center;
+	transition: transform 0.3s;
+}
+.container__card:hover {
+	transform: scale(1.05);
 }
 .container__card > h4 {
 	text-align: center;
@@ -222,7 +225,7 @@ footer p {
 @media (min-width: 500px) {
 	.container__card {
 		width: 25em;
-	    height: 28em;
+	    height: 25em;
 	}
 	.container__card > h4 {
 		padding: 3.5em 3em;
@@ -237,7 +240,7 @@ footer p {
 		margin-left: 1em;
 	}
 	.hero__img {
-		height: 35em;
+		height: 25em;
 	}
 	.container {
 		display: flex;

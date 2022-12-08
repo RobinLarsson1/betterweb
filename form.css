@@ -9,7 +9,7 @@ body {
 	min-height: 100%;
 }
 html {
-	min-width: 360px;
+	min-width: 300px;
 }
 /* start på header */
 header {
@@ -33,7 +33,10 @@ ul li {
 a {
 	color: var(--white);
 	text-decoration: none;
-	transition: 0.7s;
+	transition: color 400ms ease-in-out;
+}
+a:hover {
+	color: var(--green);
 }
 .header__btn {
 	background-color: var(--green);
@@ -84,36 +87,43 @@ span {
 	color: var(--white);
 }
 /* slut på header */
+
+/* Start main-content */
 .reg {
 	margin: 1em;
 	display: block;
 	
 }
 input {
-	width: 70%;
+	width: 80%;
 	padding: 5px;
 	margin: 1em;
 }
-/* input:valid {
+.post {
+	width: 40%;
+}
+input:valid {
 	border-right:0.5em solid #008000;
+	border-radius: 0 0 2px 2px;
 }
 input:invalid {
-	border-right:0.5em solid #ff0000;
-} */
+	border-right: 0em 0.5em 0em 0em solid #ff0000;
+}
 select {
 	padding: 5px;
 	width: 70%;
 }
 textarea {
 	padding: 5px;
-	width: 70%;
+	width: 80%;
 	margin: 1em ;
 }
 select {
 	margin: 1em;
+	width: 80%;
 }
-button {
-	margin: 1em 1em;
+.form__submit {
+	margin-left: 0.8em;
 	padding: 0.75em 1.5em;
 	background-color: var(--green);
 	border: none;
@@ -129,7 +139,7 @@ button {
 	
 }
 
-input[type=radio] {
+input[type=checkbox] {
 	accent-color: var(--green);
 	width: 5%;
 	margin: 1em 1em;
@@ -139,11 +149,17 @@ label {
 	margin: 2em 1em;
 }
 .bakgrund {
+	display: flex;
+	flex-shrink: 1;
 	position: relative;
 	height: 12.4em;
 	bottom: 1em;
-	right: 1em;
+	right: 2em;
+	padding: 1em;
 }
+/* Slut main-content */
+
+/* Start footer */
 footer {
 	display: flex;
 	justify-content: center;
@@ -174,14 +190,18 @@ footer p {
 .footer__bottom p {
 	margin-top: 2em;
 } 
-@media (min-width: 500px ) {
+/* Slut footer */
+/* @media (min-width: 500px ) {
     .bakgrund {
-		height: 15em;
+		height: 10em;
 	}
-}
-@media (min-width: 650px ) {
+} */
+@media (min-width: 750px ) {
 	.head {
 		justify-content: space-around;
+	}
+	.header__btn {
+		margin-left: 1em;
 	}
 	.navbar {
 		display: flex;
@@ -218,15 +238,19 @@ footer p {
 		box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.30); 
 	}
     .bakgrund {
-		height: 18em;
+		height: 22em;
 	}
-	input, label, #radio, select, textarea {
+	input, label, #checkbox, select, textarea {
 		margin-left: 3em;
+	}
+	input, select, textarea {
+		width: 70%;
 	}
 	button {
 		margin-left: 2.5em;
 		color: #ffffff;
 		cursor: pointer;
+		transition: 300ms;
 	}
 	button:hover {
 		color: var(--darkblue);
@@ -239,5 +263,13 @@ footer p {
 		margin: 1em 1em 1em 1.25em;
 		font-size: 32px;
 	}
+	.form__submit {
+		margin-left: 2.5em;
+	}
 	
+}
+@media (min-width: 550px) {
+	img.bakgrund {
+		height: 20em;
+	}
 }

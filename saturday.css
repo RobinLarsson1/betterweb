@@ -8,7 +8,7 @@ body {
 	background-color: var(--white);
 }
 html {
-	min-width: 360px;
+	min-width: 320px;
 }
 
 /* start på header */
@@ -33,6 +33,10 @@ ul li {
 a {
 	color: var(--white);
 	text-decoration: none;
+	transition: color 400ms ease-in-out;
+}
+a:hover {
+	color: var(--green);
 }
 .header__btn {
 	background-color: var(--green);
@@ -83,8 +87,10 @@ span {
 	font-size: 32px;
 }
 /* slut på header */
+
+/* Start main-content */
 .bygga {
-	height: 13em;
+	height: 1em;
 }
 .container {
 	display: flex;
@@ -94,6 +100,7 @@ span {
 	margin-bottom: 3em;
 }
 h2 {
+	font-size: 20px;
 	color: var(--green);
 	font-weight: bold;
 	background-color: var(--darkblue);
@@ -102,7 +109,7 @@ h2 {
 	margin: 0.5em;
 }
 .talare__img {
-	height: 6em;
+	height: 5em;
 	border-radius: 50%;
 	margin: 1em;
 }
@@ -115,6 +122,10 @@ h2 {
 	margin: 1em 1em 3em 1em;
 	height: 15em;
 	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.10); 
+	transition: transform 0.2s;
+}
+.container__card:hover {
+	transform: scale(1.15);
 }
 .text {	
 	margin-right: 1em;
@@ -125,7 +136,7 @@ h2 {
 }
 .text > h4 {
 	color: var(--darkblue);
-	font-size: 28px;
+	font-size: 22px;
 	text-align: end;
 	font-family: var(--logga);
 	opacity: 40%;
@@ -154,7 +165,11 @@ h3 {
 }
 .info {
 	margin-bottom: 1em;
+	font-size: 14px;
 }
+/* Slut main-content */
+
+/* Start footer */
 footer {
 	display: flex;
 	justify-content: center;
@@ -185,18 +200,32 @@ footer p {
 .footer__bottom p {
 	margin-top: 2em;
 }
-@media (min-width: 500px) {
+/* Slut footer */
+
+@media (min-width: 520px) {
 	.bygga {
-		height: 18em;
+		height: 14em;
 		overflow: hidden;
 	}
 	h3 {
 		font-size: 1.5em;
 	}
+	.talare__img {
+		height: 7em;
+	}
 }
 @media (min-width: 750px) {
+	.bygga {
+		height: 18em;
+	}
+	h2 {
+		font-size: 24px;
+	}
 	.head {
 		justify-content: space-around;
+	}
+	.header__btn {
+		margin-left: 1em;
 	}
 	ul {
 		display: flex;

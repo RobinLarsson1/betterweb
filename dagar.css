@@ -13,7 +13,7 @@ body {
 	margin: 0;
 }
 html {
-	min-width: 360px;
+	min-width: 320px;
 	height: 100%;
 }
 /* start på header */
@@ -38,6 +38,10 @@ ul li {
 a {
 	color: var(--white);
 	text-decoration: none;
+	transition: color 400ms ease-in-out;
+}
+a:hover {
+	color: var(--green);
 }
 .header__btn {
 	background-color: var(--green);
@@ -85,6 +89,8 @@ span {
 	font-size: 32px;
 }
 /* slut på header */
+
+/* Start main-content */
 .container {
 	display: flex;
 	flex-direction: column;
@@ -96,10 +102,9 @@ h2 {
 	text-align: center;
 	margin-top: 1em;
 	font-size: 32px;
-	text-decoration: underline;
 }
 .card__img {
-	width: 21em;
+	width: 18em;
 	height: 11em;
 	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.30);
 }
@@ -115,8 +120,8 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 10em;
-	width: 21em;
+	height: 8em;
+	width: 18em;
 	background-color: #ffffff;
 	box-shadow: 6.5px 13.0px 13.0px hsl(0deg 0% 0% / 0.10); 
 }
@@ -126,12 +131,12 @@ h2 {
 }
 .card__text__btn {
 	position: relative;
-	font-size: 1em;
+	font-size: 14px;
 	font-weight: bold;
 	background-color: var(--darkblue);
 	border: none;
 	margin: 0 6.5em;
-	padding: 0.5em;
+	padding: 0.75em 1em;
 	color: var(--white);
     z-index: 1;
 	transition: color 300ms ease-in-out;
@@ -162,6 +167,9 @@ h2 {
 .better {
 	color: var(--white)
 }
+/* Slut main-content */
+
+/* Start footer */
 footer {
 	display: flex;
 	justify-content: center;
@@ -192,14 +200,15 @@ footer p {
 .footer__bottom p {
 	margin-top: 1em;
 }
+/* Slut på footer */
 @media (min-width: 500px) {
 	.card__img {
-		width: 24em;
+		width: 22em;
 		height: 14em;
 	}
 	.card__text{
-		height: 13em;
-		width: 24em;
+		height: 10em;
+		width: 22em;
 }
 .card__text > h3 {
 	color: var(--green);
@@ -217,6 +226,9 @@ h2 {
 		justify-content: space-around;
 		
 	}
+	.header__btn {
+		margin-left: 1em;
+	}
 	.navbar {
 		display: flex;
 		flex-direction: row;
@@ -224,6 +236,9 @@ h2 {
 	}
 	h3 {
 		font-size: 36px;
+	}
+	.container__cards {
+		margin: 6em 0 6em 0;
 	}
 	.better {
 		font-size: 40px;
