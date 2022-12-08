@@ -162,6 +162,16 @@ h3 {
 	background-color: var(--green);
 	text-decoration: underline;
 }
+.saturday {
+	background-color: var(--green);
+	color: var(--darkblue);
+	text-decoration: underline;
+}
+.sunday {
+	background-color: var(--green);
+	color: var(--darkblue);
+	text-decoration: underline;
+}
 .info {
 	margin-bottom: 1em;
 	font-size: 14px;
