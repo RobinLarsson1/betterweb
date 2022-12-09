@@ -152,9 +152,8 @@ label {
 	display: flex;
 	flex-shrink: 1;
 	position: relative;
-	height: 12.4em;
+	height: 11em;
 	bottom: 1em;
-	right: 2em;
 	padding: 1em;
 }
 /* Slut main-content */
